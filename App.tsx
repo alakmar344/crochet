@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import type { CrochetItem } from './types';
 import { PRODUCTS } from './constants';
@@ -25,7 +24,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen font-sans text-brand-text">
+    <div className="flex flex-col min-h-screen text-gray-800">
       <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ProductGrid items={PRODUCTS} onBuyNow={handleBuyNow} />
